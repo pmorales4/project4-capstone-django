@@ -17,10 +17,13 @@ This is a Music artist website which will provide artist detail to promoters, cl
 # Project Design Features:
 The project will be built in Python and Django for both frontend and backend. I will utilize the framework 'Pillow' to add images to the site as uploads. 
 
+# Secured Access to Site: 
+Login | Registration page for anyone individual wanting to upload data.
+
 # Backend:
 I will use postgres SQL. 
 
 # Frontend: 
 I will use Django Templates and build them out within the application
-The possibility to add - django-embed-video - I will try to add as well.  
+The possibility to add - django-embed-video - I will try to add as well. I will use bootstrap for CSS 
 
