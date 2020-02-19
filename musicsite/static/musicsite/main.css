@@ -1,2 +1,9 @@
+body {
+    background-color: rgba(225, 144, 3, 0.8);
+    text-align: center;
 
+}
 
+#container {
+    background-color: purple;
+}
