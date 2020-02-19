@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('musicsite.urls')),
     path('register/', musicuser_views.register, name='register' ),
-
+    path('profile/', musicuser_views.profile, name='profile' ),
     # default views from django
     path('login/', auth_views.LoginView.as_view(template_name='musicusers/login.html'), name='login' ),
     path('logout/', auth_views.LogoutView.as_view(template_name='musicusers/logout.html'), name='logout' ),

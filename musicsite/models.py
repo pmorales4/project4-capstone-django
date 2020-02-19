@@ -1,4 +1,6 @@
 from django.db import models
+# added one line below for user
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Artist(models.Model):
@@ -13,14 +15,15 @@ class Artist(models.Model):
     def __str__(self):
        return self.artist_name 
 
-class Detail(models.Model):
+class Profile(models.Model):
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE, related_name='details')
     detail_company = models.CharField(max_length=100, default='Enter Company Representative')
     detail_membership = models.CharField(max_length=100, default='Enter Membership Group')
-    detail_picture = models.ImageField(upload_to='artist/picture/', null=True, blank=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    detail_picture = models.ImageField(default='default.jpg', upload_to='artist/picture/')
 
     def __str__(self):
-        return self.detail_company 
+        return f'{self.user.username} Profile'
 
    
  

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Artist, Detail
+from .models import Artist, Profile
 
 # Create your views here.
 # logic for routes in this page
