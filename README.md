@@ -27,3 +27,14 @@ I will use postgres SQL.
 I will use Django Templates and build them out within the application
 The possibility to add - django-embed-video - I will try to add as well. I will use bootstrap for CSS 
 
+# Issues: 
+
+## Resource Learned and Used on Project:
+
+Django Authentication System: https://docs.djangoproject.com/en/3.0/topics/auth/default/
+Django Contrib Auth System: https://docs.djangoproject.com/en/3.0/ref/contrib/auth/
+Django Crispy Forms: https://django-crispy-forms.readthedocs.io/en/latest/install.html
+Bootstrap Documentation: https://getbootstrap.com/docs/4.4/content/reboot/
+Django Excellent Resource - 'Form Inheritance Section' - Under: Creating forms from models Documentation (YOU CAN OVERRIDE YOUR MODELS ONCE CREATED VIA FORMS.PY): https://docs.djangoproject.com/en/3.0/topics/forms/modelforms/
+
+
