@@ -19,7 +19,8 @@ class Detail(models.Model):
     detail_membership = models.CharField(max_length=100, default='Enter Membership Group')
     detail_picture = models.ImageField(upload_to='artist/picture/', null=True, blank=True)
 
-
+    def __str__(self):
+        return self.detail_company 
 
    
  
