@@ -11,7 +11,7 @@
 
       <div class="card" style="width: 18rem;">
         {% for artist in artists%}
-        <img class="card-img-top" src="#" alt="Card image cap">
+        <img class="card-img-top" src="{{ artist.detail_picture.url }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{artist.artist_name }}</h5>
           <h4 class="card-text">{{ artist.artist_genre }}</h4>
