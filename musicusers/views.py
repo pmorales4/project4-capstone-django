@@ -36,6 +36,6 @@ def profile(request):
     context = {
         'user_form': user_form,
         'profile_form': profile_form
-
     }
+
     return render(request, 'musicusers/profile.html', context)

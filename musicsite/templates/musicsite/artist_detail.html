@@ -35,8 +35,8 @@
       
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link"><button><a href="{% url 'artist_edit' pk=artist.pk %}">Edit Artist </a></button></a>
-      <a href="#" class="card-link"><button><a href="{% url 'artist_delete' pk=artist.pk %}">Delete</a></button></a>
+      <a href="{% url 'artist_edit' pk=artist.pk %}" class="btn btn-primary">Edit Artist</a>
+      <a href="{% url 'artist_delete' pk=artist.pk %}" class="btn btn-primary">Delete</a>
     </div>
   </div>
 
