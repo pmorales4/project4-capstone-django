@@ -30,16 +30,16 @@ urlpatterns = [
     path('register/', musicuser_views.register, name='register'),
     path('profile/', musicuser_views.profile, name='profile'),
 
-    # musicsite links below
+    # works below
     path('', musicsite_views.artist_list, name= 'artist_list'),
 
-    # line not working below
+    # works below
     path('artists/<int:pk>/', musicsite_views.artist_detail, name='artist_detail'),
 
     # line below works   localhost:8000/artist/new/
     path('artists/new/', musicsite_views.artist_create, name='artist_create'),
 
-    # not working below 
+    # working below 
     path('artists/<int:pk>/edit/', musicsite_views.artist_edit, name='artist_edit'),
 
     # not working below
