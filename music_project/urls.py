@@ -18,20 +18,39 @@ from django.urls import path, include
 # default views from django
 from django.contrib.auth import views as auth_views
 from musicusers import views as musicuser_views
+from musicsite import views as musicsite_views
 
 from django.conf import settings
-from django.conf.urls.static import static 
+from django.conf.urls.static import static
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('musicsite.urls')),
-    path('register/', musicuser_views.register, name='register' ),
-    path('profile/', musicuser_views.profile, name='profile' ),
+    path('register/', musicuser_views.register, name='register'),
+    path('profile/', musicuser_views.profile, name='profile'),
+
+    # musicsite links below
+    path('', musicsite_views.artist_list, name= 'artist_list'),
+
+    # line not working below
+    path('artists/<int:pk>/', musicsite_views.artist_detail, name='artist_detail'),
+
+    # line below works   localhost:8000/artist/new/
+    path('artists/new/', musicsite_views.artist_create, name='artist_create'),
+
+    # not working below 
+    path('artists/<int:pk>/edit/', musicsite_views.artist_edit, name='artist_edit'),
+
+    # not working below
+    path('artists/<int:pk>/delete/', musicsite_views.artist_delete, name='artist_delete'),
+
+
     # default views from django
-    path('login/', auth_views.LoginView.as_view(template_name='musicusers/login.html'), name='login' ),
-    path('logout/', auth_views.LogoutView.as_view(template_name='musicusers/logout.html'), name='logout' ),
-] 
+    path('login/', auth_views.LoginView.as_view(template_name='musicusers/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='musicusers/logout.html'), name='logout'),
+]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

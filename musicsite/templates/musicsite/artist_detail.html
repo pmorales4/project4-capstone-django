@@ -1,0 +1,19 @@
+{% extends "musicsite/base.html" %}
+
+
+
+
+
+{% block content %}
+<h2>{{ artist.artist_name }} <button><a href="{% url 'artist_edit' pk=artist.pk %}">Edit Artist </a></button></h2>
+<button><a href="{% url 'artist_delete' pk=artist.pk %}">Delete</a></button>
+<h4> Artist Genre: {{ artist.artist_genre }}</h4>
+<h3>Email: {{ artist.artist_email }}</h3>
+
+
+
+<img src="{{ artist.detail_picture.url }}" alt="" class="player-photo">
+
+
+
+{% endblock %}
