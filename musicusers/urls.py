@@ -1,9 +1,10 @@
-# from musicusers import views
-# from musicsite import views
-# from . import views
+# from musicusers import views as musicusers_views
+# # from musicsite import views 
+# from django.urls import path
+# # from . import views
 
 # urlpatterns = [
 
-#     path('musician', views.musician, name='musician')
+#     path('musician', musicusers_views.musician, name='musician')
 
 # ]

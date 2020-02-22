@@ -14,6 +14,8 @@ class Artist(models.Model):
     detail_company = models.CharField(max_length=100,)
     detail_membership = models.CharField(max_length=100,)
     artist_bio = models.TextField()
+
+    # objects = models.Manager()
   
     def __str__(self):
        return self.artist_name 

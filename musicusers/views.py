@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages 
 from .forms import UserRegistrationFrom, UpdateUserForm, UpdateProfile
 from django.contrib.auth.decorators import login_required
-
+# from musicsite import models as Artist
 # from musicsite import models as 
 # from django.db import models 
 
@@ -43,8 +43,8 @@ def profile(request):
 
     return render(request, 'musicusers/profile.html', context)
 
-def musician(request):
-     artists = Access.objects.all()
-     return render(request, 'musicusers/musician.html', {'artists': artists})
+# def musician(request):
+#      artists = Artist.objects.all()
+#      return render(request, 'musicusers/musician.html', {'artists': artists})
 
     

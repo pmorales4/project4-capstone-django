@@ -12,6 +12,10 @@ def home(request):
 def about(request):
     return render(request, 'musicsite/about.html')
 
+def musician(request):
+    artists = Artist.objects.all()
+    return render(request, 'musicsite/musician.html', {'artists': artists})
+
 # Artist listed out to screen
 def artist_list(request):
     artists = Artist.objects.all()

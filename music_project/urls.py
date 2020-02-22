@@ -27,9 +27,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('musicsite.urls')),
+    # path('musician/', include('musicusers.urls')),
     path('register/', musicuser_views.register, name='register'),
     path('profile/', musicuser_views.profile, name='profile'),
-    path('musician/', musicuser_views.musician, name='musician'),
+    # path('musician/', musicuser_views.musician, name='musician'),
 
     # works below
     path('', musicsite_views.artist_list, name= 'artist_list'),
