@@ -29,6 +29,7 @@ urlpatterns = [
     path('', include('musicsite.urls')),
     path('register/', musicuser_views.register, name='register'),
     path('profile/', musicuser_views.profile, name='profile'),
+    path('musician/', musicuser_views.musician, name='musician'),
 
     # works below
     path('', musicsite_views.artist_list, name= 'artist_list'),

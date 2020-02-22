@@ -1,8 +1,9 @@
-from django.urls import path
+# from musicusers import views
+# from musicsite import views
+# from . import views
 
-from musicsite import views as musicsite_views
+# urlpatterns = [
 
+#     path('musician', views.musician, name='musician')
 
-urlpatterns = [
-    path('', musicsite_views.home, name='music-home')
-]
+# ]
