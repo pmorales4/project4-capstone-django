@@ -7,7 +7,7 @@
 
 <!-- <h2>Artist <button><a href="{% url 'artist_create' %}"> Add artist </a></button></h2> -->
 
-<ul>
+<!-- <ul>
   {% for artist in artists %}
 
 <ul>
@@ -15,13 +15,29 @@
 
   </ul>
   {% endfor %}
-</ul>
+</ul> -->
+
+
+
+<div class="list-group">
+
+  <a href="#" class="list-group-item list-group-item-action active">
+    Edit or Delete an Artist from your acount! ----- || CLICK ON NAME OF ARTIST ||
+  </a>
+  {% for artist in artists %}
+  <a href="{% url 'artist_detail' pk=artist.pk %}" class="list-group-item list-group-item-action">{{artist.artist_name}}</a>
+  <!-- <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a> -->
+  {% endfor %}
+</div>
+
 
 
 
 <h1>Music Home Site</h1>
 
-<div class="card" style="width: 18rem;">
+<!-- <div class="card" style="width: 18rem;">
   {% for artist in artists%}
   <img class="card-img-top" src="{{ artist.detail_picture.url }}" alt="Card image cap">
   <div class="card-body">
@@ -36,7 +52,28 @@
     <a href="{{ artist.artist_website }}" class="btn btn-primary">Artist Website</a>
   </div>
   {% endfor %}
+</div> -->
+
+
+<div class="card-columns">
+  {% for artist in artists%}
+  <div class="card">
+    <img src="{{ artist.detail_picture.url }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><span>Artist:</span>{{artist.artist_name }}</h5>
+      <h4 class="card-text"><span>Genre:</span> {{ artist.artist_genre }}</h4>
+      <h4 class="card-text"><span>Email:</span> {{ artist.artist_email }}</h4>
+      <h4 class="card-text"><span>Location:</span> {{ artist.artist_location }}</h4>
+      <h4 class="card-text"><span>Social Network:</span> {{ artist.artist_social }}</h4>
+      <h4 class="card-text"><span>Company:</span> {{ artist.detail_company }}</h4>
+      <h4 class="card-text"><span>Membership:</span> {{ artist.detail_membership }}</h4>
+      <h4 class="card-text"><span>About ME:</span> {{ artist.artist_bio }}</h4>
+      <a href="{{ artist.artist_website }}" class="btn btn-danger">Artist Website</a>
+    </div>
+  </div>
+  {% endfor %}
 </div>
+
 
 
 
