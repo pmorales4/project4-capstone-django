@@ -87,13 +87,12 @@ WSGI_APPLICATION = 'music_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'xjlkoihriljjnt',
-        'USER': 'dfep2b7ke61f75',
+        'NAME': 'dfep2b7ke61f75',
+        'USER': 'xjlkoihriljjnt',
         'PASSWORD': '218568b7604d4504f11a99162c4e8559b61aefdb327bbeee6e1cfc7de151e5e5',
         'HOST': 'ec2-184-72-236-57.compute-1.amazonaws.com'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
