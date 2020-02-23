@@ -23,11 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5#6*!pw)*##xqutzg)er@e7p&)n6qce8&lqjh&u0nn*5h)&#6f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1',
-                 'musiciansiteapp.herokuapp.com'
-                 ]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -50,7 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
 
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+   
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -87,10 +85,10 @@ WSGI_APPLICATION = 'music_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfep2b7ke61f75',
-        'USER': 'xjlkoihriljjnt',
-        'PASSWORD': '218568b7604d4504f11a99162c4e8559b61aefdb327bbeee6e1cfc7de151e5e5',
-        'HOST': 'ec2-184-72-236-57.compute-1.amazonaws.com'
+        'NAME': 'music',
+        'USER': 'musicuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost'
     }
 }
 
@@ -127,10 +125,8 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -142,16 +138,4 @@ LOGIN_REDIRECT_URL = 'music-home'
 LOGIN_URL = 'login'
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
 
-# Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
-
-#  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
