@@ -26,8 +26,8 @@ SECRET_KEY = '5#6*!pw)*##xqutzg)er@e7p&)n6qce8&lqjh&u0nn*5h)&#6f'
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1',
-    'musiciansiteapp.herokuapp.com'
-]
+                 'musiciansiteapp.herokuapp.com'
+                 ]
 
 
 # Application definition
@@ -44,14 +44,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'musicsite',
     'musicusers'
-    
-   
+
+
 ]
 
 MIDDLEWARE = [
 
     'whitenoise.middleware.WhiteNoiseMiddleware',
-
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -88,10 +87,10 @@ WSGI_APPLICATION = 'music_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'music',
-        'USER': 'musicuser',
-        'PASSWORD': 'music',
-        'HOST': 'localhost'
+        'NAME': 'xjlkoihriljjnt',
+        'USER': 'dfep2b7ke61f75',
+        'PASSWORD': '218568b7604d4504f11a99162c4e8559b61aefdb327bbeee6e1cfc7de151e5e5',
+        'HOST': 'ec2-184-72-236-57.compute-1.amazonaws.com'
     }
 }
 
@@ -146,8 +145,8 @@ LOGIN_URL = 'login'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
+PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
@@ -156,9 +155,4 @@ STATICFILES_DIRS = (
 )
 
 #  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-
-import dj_database_url 
-prod_db  =  dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
