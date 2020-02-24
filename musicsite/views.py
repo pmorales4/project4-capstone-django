@@ -35,7 +35,7 @@ def artist_create(request):
             return redirect('artist_detail', pk=artist.pk)
     else:
         form = ArtistForm()
-    return render(request, 'musicsite/artist_form.html', {'form': form})
+    return render(request, 'musicsite/home.html', {'form': form})
 
 # Edit an artist on site 
 def artist_edit(request, pk):
