@@ -29,7 +29,7 @@ def artist_detail(request, pk):
 # CREATE AN ARTIST ON FRONT END SECTION 
 def artist_create(request):
     if request.method == 'POST':
-        form = ArtistForm(request.POST)
+        form = ArtistForm(request.POST, request.FILES)
         if form.is_valid():
             artist =form.save()
             return redirect('artist_detail', pk=artist.pk)
@@ -41,7 +41,7 @@ def artist_create(request):
 def artist_edit(request, pk):
     artist = Artist.objects.get(pk=pk)
     if request.method == "POST":
-        form = ArtistForm(request.POST, instance=artist)
+        form = ArtistForm(request.POST, request.FILES, instance=artist)
         if form.is_valid():
             artist = form.save()
             return redirect('artist_detail', pk=artist.pk)

@@ -5,7 +5,7 @@ from django.db import models
 # Create your models here.
 class Artist(models.Model):
     artist_name = models.CharField(max_length=100,)
-    detail_picture = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    detail_picture = models.ImageField(upload_to='images/', null=True, blank=True)
     artist_genre = models.CharField(max_length=50,)
     artist_email = models.CharField(max_length=100,)
     artist_location = models.CharField(max_length=100,)
