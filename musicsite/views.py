@@ -16,6 +16,10 @@ def musician(request):
     artists = Artist.objects.all()
     return render(request, 'musicsite/musician.html', {'artists': artists})
 
+def dumpartist(request):
+    artists = Artist.objects.all()
+    return render(request, 'musicsite/dumpartist.html', {'artists': artists})
+
 # Artist listed out to screen
 def artist_list(request):
     artists = Artist.objects.all()

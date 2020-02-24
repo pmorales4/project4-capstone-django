@@ -1,0 +1,23 @@
+{% extends "musicsite/base.html" %}
+
+
+
+{% block content %}
+
+<h1>Edit or Delete An Artist In Database </h1>
+<h3>CLICK ON ARTIST NAME </h3>
+<div class="list-group">
+
+    <a href="#" class="list-group-item list-group-item-action active">
+      Edit or Delete an Artist from your acount! ----- || CLICK ON NAME OF ARTIST ||
+    </a>
+    {% for artist in artists %}
+    <a href="{% url 'artist_detail' pk=artist.pk %}" class="list-group-item list-group-item-action">{{artist.artist_name}}</a>
+    <!-- <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a> -->
+    {% endfor %}
+  </div>
+
+
+{% endblock content %}
