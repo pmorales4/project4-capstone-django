@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+
+
+
 import dj_database_url
 import os
 SECRET = os.environ['AWS_SECRET_ACCESS_KEY']
