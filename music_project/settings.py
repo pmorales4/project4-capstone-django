@@ -92,7 +92,6 @@ DATABASES = {
         'HOST': 'ec2-184-72-236-57.compute-1.amazonaws.com'
     }
 }
-postgres://xjlkoihriljjnt:218568b7604d4504f11a99162c4e8559b61aefdb327bbeee6e1cfc7de151e5e5@ec2-184-72-236-57.compute-1.amazonaws.com:5432/dfep2b7ke61f75
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
