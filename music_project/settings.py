@@ -29,7 +29,7 @@ SECRET_KEY = '5#6*!pw)*##xqutzg)er@e7p&)n6qce8&lqjh&u0nn*5h)&#6f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['musiciansiteapp.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'musiciansiteapp.herokuapp.com']
 
 
 # Application definition
@@ -133,8 +133,8 @@ USE_TZ = True
 
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
