@@ -43,8 +43,6 @@ def profile(request):
 
     return render(request, 'musicusers/profile.html', context)
 
-# def musician(request):
-#      artists = Artist.objects.all()
-#      return render(request, 'musicusers/musician.html', {'artists': artists})
+
 
     

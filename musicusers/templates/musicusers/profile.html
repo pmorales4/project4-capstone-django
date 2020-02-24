@@ -1,20 +1,8 @@
 {% extends 'musicsite/base.html' %}
-<!-- {% include 'musicsite/home.html' %} -->
+
 
 {% load crispy_forms_tags %}
 {% block content %}
-<!-- user is something django gives you.  -->
-<!-- <h1>{{ user.username }}</h1> -->
-
-
-<!-- <ul>
-    {% for artist in artists %}
-    <ul>
-      <a href="{% url 'artist_detail' pk=artist.pk %}">{{artist.artist_name}}</a>
-  
-    </ul>
-    {% endfor %}
-  </ul> -->
 
 <div class="content-section">
     <div class="media">
@@ -56,8 +44,6 @@
     </div>
     {% endfor %}
   </div>  
-  
-
 
 
 {% endblock content %} 
