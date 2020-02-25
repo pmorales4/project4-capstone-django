@@ -40,9 +40,9 @@ The possibility to add - django-embed-video - I will try to add as well. I will 
 # Issues: 
 The main is is rendering a picture to screen after production phrase.  I am figuring out the path to pics and it is through an error concerning the path on AWS from Herokul.  I have used the PILLOW framework in django to add and pictures. 
 
-# MVP / PostMVP - Pictures and Explanations: 
-
-## Home Page
+# Brief Example
+## MVP / PostMVP - Pictures and Explanations: 
+## Home Page & Mobil Responsive as well. You can add and edit artist from your iphone. 
 ![picture](music_project/images/home.png)
 
 Once someone lands of homepage they are able to see what artist or musician has been uploaded to database. They are able to see just three items about the artist until they register with the platform. 
@@ -63,6 +63,12 @@ On this page the individual logged in is able to delete or edit an individual ar
 
 Here you are able to add a new artist once you are logged into the platform.  
 
+# List of Features: Website Above & Mobil Below
+![picture](music_project/images/image0.png)
+![picture](music_project/images/image1.png)
+![picture](music_project/images/image2.png)
+![picture](music_project/images/image3.png)
+![picture](music_project/images/image5.png)
 
 
 ###############
