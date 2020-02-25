@@ -53,7 +53,7 @@ Once someone lands of homepage they are able to see what artist or musician has 
 Once logged in the individual is able to see a lot of information about the artist and they are able to press on a link that takes them to the personal website of the artist. 
 
 ## Edit and Delete Pages
-![picture](music_project/images/delete.png)
+![picture](music_project/images/dumpart.png)
 ![picture](music_project/images/editdelete.png)
 
 On this page the individual logged in is able to delete or edit an individual artist on the platform.  They must click on the name and sent to another screen for the edit and delete. 
@@ -64,11 +64,11 @@ On this page the individual logged in is able to delete or edit an individual ar
 Here you are able to add a new artist once you are logged into the platform.  
 
 # List of Features: Website Above & Mobil Below
-![picture](music_project/images/image0.png)
-![picture](music_project/images/image1.png)
-![picture](music_project/images/image2.png)
-![picture](music_project/images/image3.png)
-![picture](music_project/images/image5.png)
+![picture](music_project/images/movhome.png)
+![picture](music_project/images/movmenu.png)
+![picture](music_project/images/movnew.png)
+![picture](music_project/images/movdel.png)
+![picture](music_project/images/movnew.png)
 
 
 ###############
