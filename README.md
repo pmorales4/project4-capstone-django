@@ -18,12 +18,16 @@ This is a Music artist website which will provide artist detail to promoters, cl
 
 ![picture](music_project/images/wire.jpg)
 
+# Project Links: 
+github repo: https://github.com/pmorales4/project4-capstone-django 
+Deployment Link: https://musiciansiteapp.herokuapp.com/
+
 
 # Project Design Features:
 The project will be built in Python and Django for both frontend and backend. I will utilize the framework 'Pillow' to add images to the site as uploads. 
 
 # Secured Access to Site: 
-Login | Registration page for anyone individual wanting to upload data.
+Login | Registration page for anyone individual wanting to upload data for a musician, view a musician, edit or delete a musician.
 
 # Backend:
 I will use postgres SQL. 
@@ -33,8 +37,32 @@ I will use Django Templates and build them out within the application
 The possibility to add - django-embed-video - I will try to add as well. I will use bootstrap for CSS 
 
 # Issues: 
-
 The main is is rendering a picture to screen after production phrase.  I am figuring out the path to pics and it is through an error concerning the path on AWS from Herokul.  I have used the PILLOW framework in django to add and pictures. 
+
+# MVP / PostMVP - Pictures and Explanations: 
+
+![picture](music_project/images/home.png)
+
+Once someone lands of homepage they are able to see what artist or musician has been uploaded to database. They are able to see just three items about the artist until they register with the platform. 
+
+![picture](music_project/images/loggedin.jpg)
+
+Once logged in the individual is able to see a lot of information about the artist and they are able to press on a link that takes them to the personal website of the artist. 
+
+
+![picture](music_project/images/delete.jpg)
+![picture](music_project/images/editdelete.jpg)
+
+On this page the individual logged in is able to delete or edit an individual artist on the platform.  They must click on the name and sent to another screen for the edit and delete. 
+
+
+![picture](music_project/images/add.jpg)
+![picture](music_project/images/add1.jpg)
+
+Here you are able to add a new artist once you are logged into the platform.  
+
+
+
 
 ## Resource Learned and Used on Project:
 
