@@ -22,8 +22,8 @@ import os
 # local
 # from key import ACCESS, SECRET
 # heroku
-ACCESS = os.environ['AWS_KEY']
-SECRET = os.environ['AWS_SECRET']
+ACCESS = os.environ['AWS_ACCESS_KEY_ID']
+SECRET = os.environ['AWS_SECRET_ACCESS_KEY']
 
 #############################  AWS EDIT #########################
 
