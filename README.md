@@ -68,7 +68,7 @@ Here you are able to add a new artist once you are logged into the platform.
 ![picture](music_project/images/movmenu.png)
 ![picture](music_project/images/movnew.png)
 ![picture](music_project/images/movdel.png)
-![picture](music_project/images/movnew.png)
+![picture](music_project/images/movmus.png)
 
 
 ###############
