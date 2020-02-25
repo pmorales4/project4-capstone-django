@@ -26,6 +26,10 @@ def artist_list(request):
 def artist_detail(request, pk):
     artist = Artist.objects.get(id=pk)
     return render(request, 'musicsite/artist_detail.html', {'artist': artist})
+
+def dumpartist(request):
+    artists = Artist.objects.all()
+    return render(request, 'musicsite/dumpartist.html', {'artists': artists})
     
 # CREATE AN ARTIST ON FRONT END SECTION 
 def artist_create(request):
