@@ -3,6 +3,8 @@
 ## Music Artist Networking Site:
 This is a Music artist website which will provide artist detail to promoters, club owners, and concert venues as well as giving them the option to upload their own artist to the website. There will be a login function with username and password in order to protect music artist information from individuals outside the music industry.  The following information is available per the artist. 
 
+Centralized locations for music artist instead of all over the place on web. 
+
 * Name
 * Bio
 * Location
@@ -19,30 +21,14 @@ This is a Music artist website which will provide artist detail to promoters, cl
 
 ![picture](music_project/images/wire.jpg)
 
-# Project Links: 
+## Project Links: 
 github repo: https://github.com/pmorales4/project4-capstone-django 
 Deployment Link: https://musiciansiteapp.herokuapp.com/
-
-
-# Project Design Features:
-The project will be built in Python and Django for both frontend and backend. I will utilize the framework 'Pillow' to add images to the site as uploads. 
-
-# Secured Access to Site: 
-Login | Registration page for anyone individual wanting to upload data for a musician, view a musician, edit or delete a musician.
-
-# Backend:
-I will use postgres SQL. 
-
-# Frontend: 
-I will use Django Templates and build them out within the application
-The possibility to add - django-embed-video - I will try to add as well. I will use bootstrap for CSS 
-
-# Issues: 
-The main is is rendering a picture to screen after production phrase.  I am figuring out the path to pics and it is through an error concerning the path on AWS from Herokul.  I have used the PILLOW framework in django to add and pictures. 
+ 
 
 # Brief Example
-## MVP / PostMVP - Pictures and Explanations: 
-## Home Page & Mobil Responsive as well. You can add and edit artist from your iphone. 
+### MVP / PostMVP - Pictures and Explanations: 
+### Home Page & Mobil Responsive as well. You can add and edit artist from your iphone. 
 ![picture](music_project/images/home.png)
 
 Once someone lands of homepage they are able to see what artist or musician has been uploaded to database. They are able to see just three items about the artist until they register with the platform. 
@@ -63,18 +49,46 @@ On this page the individual logged in is able to delete or edit an individual ar
 
 Here you are able to add a new artist once you are logged into the platform.  
 
-# List of Features: Website Above & Mobil Below
+### Mobil Features below.
 ![picture](music_project/images/movhome.png)
 ![picture](music_project/images/movmenu.png)
 ![picture](music_project/images/movnew.png)
 ![picture](music_project/images/movdel.png)
 ![picture](music_project/images/movmus.png)
 
+# List of Features & Technologies Used: 
 
-###############
+The features I used with simple HTML5 and link to all CRUD once you were logged into the site.  Once logged in you can add an artist, delete an artist, display an artist, update an artist.  I used PILLOW framework to add pictures on Django using AWS S3 and uploaded site for images. 
+
+### Overview below:
+* PILLOW framework
+* Django and Templates
+* Bootstrap CSS
+* PostgresSQL
+* AWS S3 Bucket for images
+* Heroku for Website
+* Registration Page for user in order to do the above. 
+
+### Project Design Features:
+The project will be built in Python and Django for both frontend and backend. I will utilize the framework 'Pillow' to add images to the site as uploads. 
+
+### Secured Access to Site: 
+Login | Registration page for anyone individual wanting to upload data for a musician, view a musician, edit or delete a musician.
+
+### Frontend: 
+I will use Django Templates and build them out within the application
+The possibility to add - django-embed-video - I will try to add as well. I will use bootstrap for CSS 
+
+# Installation Instructions / Getting Started
+
+## Heroku Link for frontend installation
+
+Heroku Link: https://www.codementor.io/@jamesezechukwu/how-to-deploy-django-app-on-heroku-dtsee04d4
+Heroku Gunicorn: https://devcenter.heroku.com/articles/python-gunicorn
+AWS: https://devcenter.heroku.com/articles/s3
 
 
-## Resource Learned and Used on Project:
+# Resource Learned and Used on Project:
 
 ### Django Resources:
 Django Authentication System: https://docs.djangoproject.com/en/3.0/topics/auth/default/
@@ -89,7 +103,6 @@ Real Python Deployment: https://realpython.com/deploying-a-django-app-and-postgr
 Heroku Dev Center - Django and Static Assets: https://devcenter.heroku.com/articles/django-assets
 Heroku Gunicorn: https://devcenter.heroku.com/articles/python-gunicorn
 Heroku AWS Store static assets: https://devcenter.heroku.com/articles/s3
-
 
 ### Pillow & PIL Resources:
 Pillow Resize Images if Big: https://pillow.readthedocs.io/en/3.1.x/reference/Image.html
