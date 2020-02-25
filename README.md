@@ -82,11 +82,18 @@ The possibility to add - django-embed-video - I will try to add as well. I will 
 # Installation Instructions / Getting Started
 
 ## Heroku Link for frontend installation
-
 Heroku Link: https://www.codementor.io/@jamesezechukwu/how-to-deploy-django-app-on-heroku-dtsee04d4
 Heroku Gunicorn: https://devcenter.heroku.com/articles/python-gunicorn
+
+## AWS Link
 AWS: https://devcenter.heroku.com/articles/s3
 
+
+# Contribution Guidelines
+If can register and start adding artist to the site and create a deep database of musicians. Also suggest new features, work on project together to improve site from view, data, and structure. 
+
+Github repo: https://github.com/pmorales4/project4-capstone-django 
+Deployment Link: https://musiciansiteapp.herokuapp.com/
 
 # Resource Learned and Used on Project:
 
