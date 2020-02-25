@@ -15,9 +15,17 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import dj_database_url
 import os
-SECRET = os.environ['AWS_SECRET_ACCESS_KEY']
-ACCESS = os.environ['AWS_ACCESS_KEY_ID']
-BUCKET_NAME = os.environ['SE_BUCKET_NAME']
+# SECRET = os.environ['AWS_SECRET_ACCESS_KEY']
+# ACCESS = os.environ['AWS_ACCESS_KEY_ID']
+# BUCKET_NAME = os.environ['SE_BUCKET_NAME']
+#############################  AWS EDIT #########################
+# local
+from key import ACCESS, SECRET
+# heroku
+# ACCESS = os.environ['AWS_KEY']
+# SECRET = os.environ['AWS_SECRET']
+# BUCKET_NAME = os.environ['SE_BUCKET_NAME']
+#############################  AWS EDIT #########################
 
 
 
@@ -175,14 +183,26 @@ DATABASES['default'].update(prod_db)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static' 'media')
 # s3 bucket
+# AWS_ACCESS_KEY_ID = ACCESS
+# AWS_SECRET_ACCESS_KEY = SECRET
+# AWS_STORAGE_BUCKET_NAME= BUCKET_NAME
+# BUCKET_NAME = os.environ['SE_BUCKET_NAME']
+
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# STATICFILES_FINDERS= ['django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder','storages.backends.s3boto3.S3Boto3Storage']
+################################  AWS
+# s3 bucket
 AWS_ACCESS_KEY_ID = ACCESS
 AWS_SECRET_ACCESS_KEY = SECRET
-AWS_STORAGE_BUCKET_NAME= BUCKET_NAME
+AWS_STORAGE_BUCKET_NAME= 'project-bucket-2020'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATICFILES_FINDERS= ['django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder','storages.backends.s3boto3.S3Boto3Storage']
-
+AWS_S3_REGION_NAME = 'us-east-2'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+################################  AWS
 
 
 
