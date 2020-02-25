@@ -20,11 +20,11 @@ import os
 # BUCKET_NAME = os.environ['SE_BUCKET_NAME']
 #############################  AWS EDIT #########################
 # local
-from key import ACCESS, SECRET
+# from key import ACCESS, SECRET
 # heroku
-# ACCESS = os.environ['AWS_KEY']
-# SECRET = os.environ['AWS_SECRET']
-# BUCKET_NAME = os.environ['SE_BUCKET_NAME']
+ACCESS = os.environ['AWS_KEY']
+SECRET = os.environ['AWS_SECRET']
+
 #############################  AWS EDIT #########################
 
 
