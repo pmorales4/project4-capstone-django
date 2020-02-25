@@ -32,7 +32,7 @@ def artist_create(request):
         form = ArtistForm(request.POST, request.FILES)
         if form.is_valid():
             artist =form.save()
-            return redirect('artist_detail', pk=artist.pk)
+            return redirect('artist_list', pk=artist.pk)
     else:
         form = ArtistForm()
     return render(request, 'musicsite/artist_form.html', {'form': form})
