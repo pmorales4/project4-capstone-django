@@ -27,7 +27,7 @@
   {% for artist in artists %}
   <div class="card">
    
-    <img src="{{ artist.detail_picture.url|default_if_none:'#'}}" class="card-img-top" alt="...">
+    <img src="{{ artist.detail_picture.url }}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Artist: {{artist.artist_name }}</h5>
       <h4 class="card-text">Genre: {{ artist.artist_genre }}</h4>
