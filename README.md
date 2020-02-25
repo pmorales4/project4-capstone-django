@@ -60,7 +60,7 @@ On this page the individual logged in is able to delete or edit an individual ar
 
 ## Add artist and Form pages.
 ![picture](music_project/images/add.png)
-![picture](music_project/images/add1.png)
+
 
 Here you are able to add a new artist once you are logged into the platform.  
 
